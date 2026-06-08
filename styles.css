@@ -122,16 +122,24 @@ footer {
 }
 
 footer a {
-  color: white;
+  color: white;.calendar-mobile {
+    display: none;
+  }
+  
+  @media (max-width: 700px) {
+    nav a {
+      display: block;
+      margin: 8px 0;
+    }
+  
+    .calendar-desktop {
+      display: none;
+    }
+  
+    .calendar-mobile {
+      display: block;
+      height: 750px;
+    }
+  }
 }
 
-@media (max-width: 700px) {
-  nav a {
-    display: block;
-    margin: 8px 0;
-  }
-
-  .calendar-box {
-    height: 600px;
-  }
-}
